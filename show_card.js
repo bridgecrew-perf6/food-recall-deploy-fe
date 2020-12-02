@@ -1,7 +1,7 @@
 const searchParams = new URLSearchParams(window.location.search)
 const recallNumber = searchParams.get('recall_number')
 
-fetch(`http://localhost:3000/recall_number?recall_number=${recallNumber}`)
+fetch(`https://food-recalls-fda.herokuapp.com/recall_number?recall_number=${recallNumber}`)
     .then(response => response.json())
     .then(handleRecall)
 

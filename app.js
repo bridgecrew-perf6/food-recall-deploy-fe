@@ -1,6 +1,6 @@
 const searchParams = new URLSearchParams(window.location.search)	
 const search_term = searchParams.get("search_term")	
-let url = 'http://localhost:3000/recalls'	
+let url = 'https://food-recalls-fda.herokuapp.com/recalls'	
 
 const formResults = document.querySelector('#formresults')	
 

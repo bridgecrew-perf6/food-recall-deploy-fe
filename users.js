@@ -1,7 +1,7 @@
 const searchParams = new URLSearchParams(window.location.search)
 const user_id = searchParams.get('user_id')
 
-fetch(`http://localhost:3000/users/${user_id}`)
+fetch(`https://food-recalls-fda.herokuapp.com/users/${user_id}`)
 
     .then(response => response.json())
     .then(user => {

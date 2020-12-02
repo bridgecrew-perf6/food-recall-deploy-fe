@@ -3,7 +3,7 @@ const state = searchParams.get('state')
 
 const recallList = document.querySelector('#recallCompanyList')
 
-fetch(`http://localhost:3000/state?state=${state}`)
+fetch(`https://food-recalls-fda.herokuapp.com/state?state=${state}`)
     .then(response => response.json())
     .then(handleStates)
 

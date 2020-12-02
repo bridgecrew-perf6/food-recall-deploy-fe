@@ -3,7 +3,7 @@ const recallNumber = searchParams.get('recall_id')
 
 const recallId = document.querySelector('#recall')
 
-fetch(`http://localhost:3000/recalls/${recallNumber}`)
+fetch(`https://food-recalls-fda.herokuapp.com/recalls/${recallNumber}`)
     .then(response => response.json())
     .then(recall => {
         const recallCard = document.createElement('div')

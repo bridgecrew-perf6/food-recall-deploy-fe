@@ -1,7 +1,7 @@
 const searchParams = new URLSearchParams(window.location.search)
 const companies = searchParams.get('recalling_firm')
 
-fetch(`http://localhost:3000/recalling_firm?recalling_firm=${companies}`)
+fetch(`https://food-recalls-fda.herokuapp.com/recalling_firm?recalling_firm=${companies}`)
     .then(response => response.json())
     .then(handleCompanies)
 

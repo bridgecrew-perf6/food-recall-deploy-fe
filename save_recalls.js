@@ -1,4 +1,4 @@
-fetch(`http://localhost:3000/users`)
+fetch(`https://food-recalls-fda.herokuapp.com/users`)
     .then(response => response.json())
     .then(users => {
 
